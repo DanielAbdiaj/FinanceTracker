@@ -8,6 +8,7 @@ import { useFirestore } from '../../hooks/useFirestore';
 export default function TransactionList({transactions}) {
 
     const {deleteDocument,response}=useFirestore('transactions');
+    console.log(response);
     
     const totalTransaction= transactions.reduce(
       (total,currentTransaction) =>  
