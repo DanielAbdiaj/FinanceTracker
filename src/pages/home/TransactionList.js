@@ -9,7 +9,10 @@ export default function TransactionList({transactions}) {
     console.log(response);
 
   return (
+   
     <ul className={styles.transactions}>
+
+    <p>Total money spend :</p>
 
         {transactions.map((transaction)=>(
 
